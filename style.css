@@ -1,0 +1,232 @@
+/*Please note the onboard postits position specs:top: 25%; left: 30%; top: 62%; left: 62%;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
+
+body {
+	background-color: #F1F5F4;
+ 	margin: 0px;
+ 	padding: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	width: 100%;
+	height: 95vh;
+	background-image: url("images/bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+nav {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+	padding: 0px 1%;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav ul li a{
+	list-style: none;
+	margin: 30px;
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.name{
+	font-family: "Montserrat", sans-serif;
+	background-color: rgba(255,22,85,1);
+	color: white;
+	font-size: 17px;
+	font-weight: bolder;
+}
+
+.active{
+	font-weight: bolder;
+	color: black;
+}
+
+.text-container p:nth-child(1){
+	font-family: "Montserrat", sans-serif;
+	font-weight: bolder;
+	color: #6d6d6d;
+	font-size: 18px;
+}
+
+.text-container p:nth-child(2){
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	color: #1a1a1a;
+	font-size: 50px;
+}
+
+.text-container p:nth-child(3){
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	color: #403e3e;
+	font-size: 25px;
+	line-height: 20px;
+}
+
+.text-container p{
+	line-height: 0px;
+	margin: 40px 0px 25px;
+}
+
+.text-container {
+	position: absolute;
+	left: 13%;
+	top: 52%;
+	transform: translate(-13%,-52%);
+}
+
+.text-container button{
+	width: 255px;
+	height: 42px;
+	border-radius: 40px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	outline: none;
+	margin: 0px 10px;
+}
+
+.resume-button {
+	padding: 9px 1px 9px;
+	background-color: rgba(255,22,85,1);
+	color: white;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.2s ease 0s;
+}
+
+.resume-button:hover {
+	background-color: rgba(255,22,85,0.9);
+}
+
+.banner{
+	background-color: rgba(255,22,85,1);
+	color: white;
+}
+
+.about{
+	width: 90%;
+	height: 250px;
+	background-color: #FFFFFF;
+	border-radius: 20px;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+	display: flex;
+	margin: -5% auto 20px auto ;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about-text{
+	width: 80%;
+	padding: 2px 2px 2px 50px;
+	font-family: "Montserrat", sans-serif;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.board{
+	width: 100%;
+	height: 100vh;
+	background-image: url("images/board.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	background-position: center;
+	padding-top: 60px;
+}
+
+.msg-send-button{
+	padding: 9px 1px 9px;
+	background-color: rgba(238,171,162,0.8);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.2s ease 0s;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	width: 100px;
+	margin-top: 10px;
+	outline: none;
+ }
+
+.msg-send-button:hover {
+	background-color: rgba(238,171,162,1);
+}
+
+.text-field{
+	border: 1px solid #EEABA2;
+	border-radius: 50px;
+	height: 38px;
+	padding-left: 19px;
+	font-family: "Montserrat", sans-serif;
+	outline: none;
+	margin-top: 10px;
+	margin-right: 20px;
+	width: 87%;
+}
+
+.msg-text{
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	color: #1a1a1a;
+	font-size: 20px;
+}
+
+.contact-form{
+	width: 90%;
+	margin: 90px auto 20px auto ;
+	position: relative;
+	align-items: left;
+}
+
+.postit{
+	position: absolute;
+	height: auto;
+	width: 10%;
+	display: none;
+}
+
+.msg-sub-text{
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	color: #6d6d6d;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+.comment{
+  border: thin solid #EEABA2;
+  border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+  height: 38px;
+  align-items: center;
+}
