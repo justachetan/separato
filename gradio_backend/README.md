@@ -9,3 +9,7 @@ Possible source separation algo names:
 - wienerf
 - hpss
 ``
+
+``
+python3 gradio_backend.py --algo=duet
+``
