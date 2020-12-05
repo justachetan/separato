@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
 
 body {
-	background-color: #F1F5F4;
+	background-color: #FFFFFF;
  	margin: 0px;
  	padding: 0px;
 }
@@ -48,6 +48,26 @@ nav ul li a{
 	color: white;
 	font-size: 15px;
 	font-weight: 700;
+}
+
+.algo-button{
+	padding: 9px 12px 9px;
+	background-color: rgba(255,22,85,1);
+	color: white;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.algo-button-inactive{
+	padding: 9px 12px 9px;
+	background-color: rgba(112,117,122,1);
+	color: white;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-right: 20px;
 }
 
 .name{
@@ -205,29 +225,3 @@ nav ul li a{
 	align-items: left;
 }
 
-.postit{
-	position: absolute;
-	height: auto;
-	width: 10%;
-	display: none;
-}
-
-.msg-sub-text{
-	font-family: "Montserrat", sans-serif;
-	font-weight: bold;
-	color: #6d6d6d;
-	font-size: 15px;
-	margin-top: 20px;
-}
-
-.comment{
-  border: thin solid #EEABA2;
-  border-radius: 50px;
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  margin: 10px;
-  padding: 5px;
-  width: 80%;
-  height: 38px;
-  align-items: center;
-}
