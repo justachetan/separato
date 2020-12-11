@@ -1,5 +1,3 @@
-/*Please note the onboard postits position specs:top: 25%; left: 30%; top: 62%; left: 62%;*/
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
 
 body {
@@ -106,11 +104,6 @@ nav ul li a{
 	margin: 40px 0px 25px;
 }
 
-.text-container {
-	
-	
-}
-
 .text-container button{
 	width: 255px;
 	height: 42px;
@@ -199,29 +192,29 @@ nav ul li a{
 	background-color: rgba(238,171,162,1);
 }
 
-.text-field{
-	border: 1px solid #EEABA2;
-	border-radius: 50px;
-	height: 38px;
-	padding-left: 19px;
-	font-family: "Montserrat", sans-serif;
-	outline: none;
-	margin-top: 10px;
-	margin-right: 20px;
-	width: 87%;
+
+.hiw-div {
+	border-radius: 35px;
+	background-color: #F0F0F0;
+	margin: auto;
+	margin-top: 40px; 
+	width: 90%;
+	padding: 20px;
 }
 
-.msg-text{
+.hiw-div-head {
 	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-	color: #1a1a1a;
+	color: rgba(255,22,85,1);
 	font-size: 20px;
+	/*padding-bottom: 10px;*/
+
 }
 
-.contact-form{
-	width: 90%;
-	margin: 90px auto 20px auto ;
-	position: relative;
-	align-items: left;
+.hiw-div-body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	/*padding-bottom: 10px;*/
+
 }
 
