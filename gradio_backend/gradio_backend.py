@@ -210,10 +210,10 @@ examples = {
     ],
     "highpass": [
         ["example_audios/hpassdefault.mp3", "audio"],
-        ["example_audios/hpassftest.mp3", "audio"]
+        ["example_audios/hpassftest.wav", "audio"]
     ],
     "repet": [
-        ["example_audios/raag_bhairavi_by_kaushiki.mp3", "audio"],
+        ["example_audios/raag_bhairavi_by_kaushiki.m4a", "audio"],
     ],
     "timber": [
         ["example_audios/timber_test.m4a", "audio"],
