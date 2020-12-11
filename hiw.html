@@ -83,7 +83,7 @@
 <body>
 <button type="button" class="collapsible">What is Source Seperation?</button>
 <div class="content">
-  <p class="hiw-div-body2"> Source separation, one of the most classical problems in Signal and Speech Processing ("Cocktail Party Problem").<br>
+  <p class="hiw-div-body2"> Source separation, one of the most classical problems in Signal and Speech Processing ("Cocktail Party Problem").<br><br>
   When we talk about audio processing, it refers to the extraction of signals simultaneously emitted by several sound sources, from the audio recordings of the resulting mixture signal.It has various applications, going from speech enhancement as a front-end for telecommunication systems and automatic speech recognition, to demixing and remixing of music, tracking endangered animal species to developing more effective digital hearing aids.</p>
 </div>
 
@@ -91,22 +91,38 @@
 
 <button type="button" class="collapsible">HPSS Algorithim</button>
 <div class="content">
-  <p class="hiw-div-body2"> HPSS stands for Harmonic Percussive Source Separation. Harmonics sounds look similar horizontal stripes on a spectrogram and percussive sounds look similar to vertical stripes. The insight of Harmonic-Percussive Source Separation (HPSS) is that we can apply median filter across frequency bins (horizontal, or harmonic) and across time bins (vertical, or percussive) to separate sources. In the example that we have taken here, we have separated a continuous piano sound with a sparse vocals sound</p>
+  <p class="hiw-div-body2"> HPSS stands for Harmonic Percussive Source Separation.<br><br>
+  Separates the audio in Harmonic and Percussive components (assumption by the algorithm - only 2 component separation is allowed).<br><br>
+  Harmonic components contain distinct pitch variations. Percussive components have a clear localisation in time - For example, a 4/4 beat would have 4 quarter notes in a measure. These intermittent sounds have a very high frequency range and can be detected as ‘spikes’ in the spectrogram.
+</p>
 </div>
 
-<button type="button" class="collapsible">High Pass Filter Algorithm</button>
+<button type="button" class="collapsible">Filtering</button>
 <div class="content">
-  <p class="hiw-div-body2"> High pass filter works on filtering the low frequencies from the high frequencies. In the example that we have taken, we have provided a mix of low frequency high gain kicks alongside high frequency vocals which can be separated using the high pass filter.</p>
+  <p class="hiw-div-body2"> Filtering is a commonly used benchmarking technique in signal processing<br><br>
+    A lower frequency limit is selected by the user. The audio is thresholded using the frequency limit and the two components are then separated out.<br><br>
+    This simple yet effective technique is used in several applications - separating baritones from sopranos, separating bass from high-frequency vocals, etc to name a few.
+
+  </p>
 </div>
 
-<button type="button" class="collapsible">Dual Spatial Filter Algorithim</button>
+<button type="button" class="collapsible">REPET</button>
 <div class="content">
-  <p class="hiw-div-body2"> The dual spatial filter is filtering the audios on the basis of their spatial orientation. The input signal that we have provided has left aligned vocals and right aligned base, which has been separated into the the 2 output signals with the vocals in the output signal 1 and bass in the output signal 2.</p>
+  <p class="hiw-div-body2"> REPET stands for REpeating Pattern Extraction Technique.<br><br>
+    The primary intuition is to identify ‘repeating’ audio segments, and use them as masks. The repeating part of the audio is one component of the separated audio. The other part is obtained by using the repeated part as a ‘mask’ to hide it out.<br><br>
+    This method is often used for background noise removal, and karaoke track creation. Often the algorithm is used to create studio quality audio from noisy recordings!<br>
+
+</p>
 </div>
 
-<button type="button" class="collapsible">Spatial Clustering Algorithm</button>
+<button type="button" class="collapsible">Timbre Clustering</button>
 <div class="content">
-  <p class="hiw-div-body2"> The spatial clustering filter is filtering the audios on the basis of clusters of their spatial orientation. The input signal that we have provided has left aligned vocals, right aligned base and centre aligned base, which has been separated into the 3 output signals with the vocals in the output signal 1 and bass in the output signal 2.</p>
+  <p class="hiw-div-body2"> Timbre Clustering is a Machine Learning based algorithm.<br><br>
+
+The idea of the algorithm is simple - Separate audios that have a distinct timbre. Since this is an AI-based algorithm, we do not need to specify the number of sources here - even if there are more than two, the algorithm will identify them.<br><br>
+
+Since other algorithms cannot separate different harmonic instruments, Timbre Clustering is often used to separate wind instruments like flute or saxophone from string instruments like guitar or mandolin.
+</p>
 </div>
 <!-- <p>Collapsible Set:</p>
 <button type="button" class="collapsible">Open Section 1</button>
