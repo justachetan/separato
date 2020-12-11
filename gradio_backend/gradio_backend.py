@@ -209,14 +209,14 @@ examples = {
         ["example_audios/sargam_with_teen_taal.mp3", "audio"]
     ],
     "highpass": [
-        ["example_audios/hpassdefault.mp3", "audio"],
-        ["example_audios/hpassftest.wav", "audio"]
+        ["example_audios/hpass_basic.wav", "audio"],
+        ["example_audios/hpass_advance.mp3", "audio"]
     ],
     "repet": [
         ["example_audios/raag_bhairavi_by_kaushiki.m4a", "audio"],
     ],
     "timber": [
-        ["example_audios/timber_test.m4a", "audio"],
+        ["example_audios/sax_plus_guitar.m4a", "audio"],
         ["example_audios/marimba_timbre.mp3", "audio"]
     ]
 
