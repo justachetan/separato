@@ -216,7 +216,8 @@ examples = {
         ["example_audios/raag_bhairavi_by_kaushiki.mp3", "audio"],
     ],
     "timber": [
-        ["example_audios/timber_test.m4a", "audio"]
+        ["example_audios/timber_test.m4a", "audio"],
+        ["example_audios/marimba_timbre.mp3", "audio"]
     ]
 
 }
