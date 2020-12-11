@@ -1,13 +1,74 @@
-<!DOCTYPE html> 
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Separato</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
-  <body>
+<head>
+<meta charset="UTF-8">
+<title>Separato</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
+.collapsible {
+  background-color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(255,22,85,1);
+  cursor: pointer;
+  padding: 40px;
+  width: 96%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-left: 25px;
+  margin-top: 25px;
+  border-radius: 30px;
+}
+
+.active, .collapsible:hover {
+  background-color: rgba(255,22,85,1);
+  color: #ffffff;
+}
+
+.content {
+  /*padding: 0 10px;*/
+  display: none;
+  /*padding: 20px;*/
+  width: 90%;
+  overflow: hidden;
+  background-color: #ffffff;
+  margin-left: 25px;
+}
+
+.hiw-div-body2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.hiw-section-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  padding: 5px;
+  margin-left: 50px;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: rgba(255,22,85,1);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+  color: white;
+}
+  /*padding-bottom: 10px;*/
+</style>
+</head>
+
+<body>
     <nav class="banner">
         <a href="index.html" class="name">SEPARATO</a>
         <ul>
@@ -17,48 +78,66 @@
           <li><a href="pi.html">Project Ideas</a></li>
         </ul>
       </nav>
-      
-      <p align="center">
-        <div class="hiw-div">
-        <h1 class="hiw-div-head"> What is source separation ?</h1>
-        <p class="hiw-div-body">
-          yada yada yada 
-         
-        </p>
-        </div>
+</body>
 
-        <div class="hiw-div">
-        <h1 class="hiw-div-head"> hpss algorithim </h1>
-        <p class="hiw-div-body">
-          yada yada yada 
-         
-        </p>
-        </div>
+<body>
+<button type="button" class="collapsible">What is Source Seperation?</button>
+<div class="content">
+  <p class="hiw-div-body2"> Source separation, one of the most classical problems in Signal and Speech Processing ("Cocktail Party Problem").<br>
+  When we talk about audio processing, it refers to the extraction of signals simultaneously emitted by several sound sources, from the audio recordings of the resulting mixture signal.It has various applications, going from speech enhancement as a front-end for telecommunication systems and automatic speech recognition, to demixing and remixing of music, tracking endangered animal species to developing more effective digital hearing aids.</p>
+</div>
 
-        <div class="hiw-div">
-        <h1 class="hiw-div-head"> high pass filter algorithm</h1>
-        <p class="hiw-div-body">
-          yada yada yada 
-         
-        </p>
-        </div>
+<p class="hiw-section-heading">Algorithms Used</p>
 
-        <div class="hiw-div">
-        <h1 class="hiw-div-head"> dual spatial filter algorithim</h1>
-        <p class="hiw-div-body">
-          yada yada yada 
-         
-        </p>
-        </div>
+<button type="button" class="collapsible">HPSS Algorithim</button>
+<div class="content">
+  <p class="hiw-div-body2"> HPSS stands for Harmonic Percussive Source Separation. Harmonics sounds look similar horizontal stripes on a spectrogram and percussive sounds look similar to vertical stripes. The insight of Harmonic-Percussive Source Separation (HPSS) is that we can apply median filter across frequency bins (horizontal, or harmonic) and across time bins (vertical, or percussive) to separate sources. In the example that we have taken here, we have separated a continuous piano sound with a sparse vocals sound</p>
+</div>
 
-        <div class="hiw-div">
-        <h1 class="hiw-div-head"> spatial clustering algorithm</h1>
-        <p class="hiw-div-body">
-          yada yada yada 
-         
-        </p>
-        </div>
-      </p>
-    
-  </body>
+<button type="button" class="collapsible">High Pass Filter Algorithm</button>
+<div class="content">
+  <p class="hiw-div-body2"> High pass filter works on filtering the low frequencies from the high frequencies. In the example that we have taken, we have provided a mix of low frequency high gain kicks alongside high frequency vocals which can be separated using the high pass filter.</p>
+</div>
+
+<button type="button" class="collapsible">Dual Spatial Filter Algorithim</button>
+<div class="content">
+  <p class="hiw-div-body2"> The dual spatial filter is filtering the audios on the basis of their spatial orientation. The input signal that we have provided has left aligned vocals and right aligned base, which has been separated into the the 2 output signals with the vocals in the output signal 1 and bass in the output signal 2.</p>
+</div>
+
+<button type="button" class="collapsible">Spatial Clustering Algorithm</button>
+<div class="content">
+  <p class="hiw-div-body2"> The spatial clustering filter is filtering the audios on the basis of clusters of their spatial orientation. The input signal that we have provided has left aligned vocals, right aligned base and centre aligned base, which has been separated into the 3 output signals with the vocals in the output signal 1 and bass in the output signal 2.</p>
+</div>
+<!-- <p>Collapsible Set:</p>
+<button type="button" class="collapsible">Open Section 1</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 2</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div> -->
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
 </html>
