@@ -60,7 +60,7 @@ Markdown==3.3.3
 MarkupSafe==1.1.1
 matplotlib==3.3.2
 mir-eval==0.6
-mistune==0.8.4
+mistune==2.0.3
 monotonic==1.5
 musdb==0.3.1
 museval==0.3.1
